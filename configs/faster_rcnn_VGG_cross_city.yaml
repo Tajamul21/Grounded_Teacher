@@ -1,0 +1,55 @@
+_BASE_: "./Base-RCNN-C4.yaml"
+MODEL:
+  # META_ARCHITECTURE: "TwoStagePseudoLabGeneralizedRCNN"
+  META_ARCHITECTURE: "DAobjTwoStagePseudoLabGeneralizedRCNN"
+  BACKBONE:
+    NAME: "build_vgg_backbone"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 101
+  PROPOSAL_GENERATOR:
+    NAME: "PseudoLabRPN"
+  # RPN:
+  #   POSITIVE_FRACTION: 0.25
+  RPN:
+    IN_FEATURES: ["vgg4"]
+  ROI_HEADS:
+    NAME: "StandardROIHeadsPseudoLab"
+    LOSS: "CrossEntropy" # variant: "CrossEntropy"
+    NUM_CLASSES: 1
+    IN_FEATURES: ["vgg4"]
+  ROI_BOX_HEAD:
+    NAME: "FastRCNNConvFCHead"
+    NUM_FC: 2
+    POOLER_RESOLUTION: 7
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+SOLVER:
+  LR_SCHEDULER_NAME: "WarmupTwoStageMultiStepLR"
+  STEPS: (60000, 80000, 90000, 360000)
+  FACTOR_LIST: (1, 1, 1, 1, 1)
+  MAX_ITER: 40000 
+  IMG_PER_BATCH_LABEL: 2
+  IMG_PER_BATCH_UNLABEL: 2
+  BASE_LR: 0.01
+DATALOADER:
+  SUP_PERCENT: 100.0
+DATASETS:
+  CROSS_DATASET: True
+  TRAIN_LABEL: ("VOC2007_rsna_sf_train",)
+  TRAIN_UNLABEL: ("VOC2007_rsna_train",)
+  TEST: ("VOC2007_inb_test",)
+  EXPERT_PATH: 'Expert_Labels/rsna_results.txt'
+SEMISUPNET:
+  Trainer: "GT"
+  BBOX_THRESHOLD: 0.8
+  TEACHER_UPDATE_ITER: 1
+  BURN_UP_STEP: 20000 
+  EMA_KEEP_RATE: 0.9996
+  UNSUP_LOSS_WEIGHT: 1.0
+  SUP_LOSS_WEIGHT: 1.0
+  DIS_LOSS_WEIGHT: 0.1
+  DIS_TYPE: "vgg4" #["concate","p2","multi"]
+TEST:
+  EVAL_PERIOD: 1000
+
