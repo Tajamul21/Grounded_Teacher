@@ -10,7 +10,7 @@ import detectron2.utils.comm as comm
 import numpy as np
 
 
-class ICRm:
+class RCM:
     def __init__(self,num_classes = 8, max_save = 50, dir = "", blocked_classes = [],mix_ratio=0.5, cfg = None):
         self.num_classes = num_classes
         self.max_save = max_save

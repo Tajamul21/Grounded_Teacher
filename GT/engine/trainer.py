@@ -34,7 +34,7 @@ from GT.modeling.meta_arch.ts_ensemble import EnsembleTSModel
 from GT.checkpoint.detection_checkpoint import DetectionTSCheckpointer
 from GT.solver.build import build_lr_scheduler
 from GT.evaluation import PascalVOCDetectionEvaluator, COCOEvaluator
-from GT.icrm import ICRm
+from GT.rcm import RCM
 
 from .probe import OpenMatchTrainerProbe
 import copy
@@ -381,7 +381,7 @@ class CATTrainer(DefaultTrainer):
         self.cfg = cfg
 
         self.probe = OpenMatchTrainerProbe(cfg)
-        self.icrm = ICRm(cfg.MODEL.ROI_HEADS.NUM_CLASSES, 50, cfg.OUTPUT_DIR, blocked_classes=self.cfg.BLOCKED_CLASSES,mix_ratio = self.cfg.MIX_RATIO, cfg = self.cfg)
+        self.rcm = RCM(cfg.MODEL.ROI_HEADS.NUM_CLASSES, 50, cfg.OUTPUT_DIR, blocked_classes=self.cfg.BLOCKED_CLASSES,mix_ratio = self.cfg.MIX_RATIO, cfg = self.cfg)
         self.register_hooks(self.build_hooks()) 
         self.top_eval_ap = 0.0
         self.top_eval_ap_stu = 0.0
@@ -575,14 +575,14 @@ class CATTrainer(DefaultTrainer):
         
         if self.cfg.MIXUP:
             with torch.no_grad():
-                self.icrm.save_crops(label_data_k) 
-                label_data_k = self.icrm.mix_crop_new(label_data_k)
-                label_data_q = self.icrm.add_labels(label_data_q)
+                self.rcm.save_crops(label_data_k) 
+                label_data_k = self.rcm.mix_crop_new(label_data_k)
+                label_data_q = self.rcm.add_labels(label_data_q)
         else:
             with torch.no_grad():
-                self.icrm.save_crops(label_data_k) 
-                label_data_k = self.icrm.add_labels(label_data_k)
-                label_data_q = self.icrm.add_labels(label_data_q)
+                self.rcm.save_crops(label_data_k) 
+                label_data_k = self.rcm.add_labels(label_data_k)
+                label_data_q = self.rcm.add_labels(label_data_q)
             
         if self.iter == self.cfg.SEMISUPNET.BURN_UP_STEP:
             # update copy the the whole model
@@ -603,7 +603,7 @@ class CATTrainer(DefaultTrainer):
         if self.iter < self.cfg.SEMISUPNET.BURN_UP_STEP:
 
             if self.cfg.CLS_LOSS:
-                class_info = self.icrm.class_info
+                class_info = self.rcm.class_info
             else:
                 class_info = None
             # input both strong and weak supervised data into model
@@ -612,7 +612,7 @@ class CATTrainer(DefaultTrainer):
                 label_data_k, branch="supervised",class_info = class_info)
                 
             with torch.no_grad():
-                self.icrm.get_matches(proposals_predictions,self.iter)
+                self.rcm.get_matches(proposals_predictions,self.iter)
 
             # weight losses
             loss_dict = {}
@@ -715,17 +715,17 @@ class CATTrainer(DefaultTrainer):
 
             if self.cfg.MIXUP:
                 with torch.no_grad():
-                    self.icrm.save_crops_target(unlabel_data_k)
-                    all_unlabel_data = self.icrm.mix_crop_new(all_unlabel_data, True)
-                    all_bmp_unlabel_data = self.icrm.mix_crop_new(all_bmp_unlabel_data, True)
+                    self.rcm.save_crops_target(unlabel_data_k)
+                    all_unlabel_data = self.rcm.mix_crop_new(all_unlabel_data, True)
+                    all_bmp_unlabel_data = self.rcm.mix_crop_new(all_bmp_unlabel_data, True)
             else:
                 with torch.no_grad():
-                    self.icrm.save_crops_target(unlabel_data_k)
-                    all_unlabel_data = self.icrm.add_labels(all_unlabel_data)
-                    all_bmp_unlabel_data = self.icrm.add_labels(all_bmp_unlabel_data)
+                    self.rcm.save_crops_target(unlabel_data_k)
+                    all_unlabel_data = self.rcm.add_labels(all_unlabel_data)
+                    all_bmp_unlabel_data = self.rcm.add_labels(all_bmp_unlabel_data)
 
             if self.cfg.CLS_LOSS:
-                class_info = self.icrm.class_info
+                class_info = self.rcm.class_info
             else:
                 class_info = None
 
@@ -736,15 +736,15 @@ class CATTrainer(DefaultTrainer):
             record_dict.update(record_all_label_data)
 
             with torch.no_grad():
-                self.icrm.get_matches(proposals_predictions,self.iter)
+                self.rcm.get_matches(proposals_predictions,self.iter)
     
 
 
             if self.cfg.CLS_LOSS:
                 if self.iter < self.cfg.SEMISUPNET.BURN_UP_STEP+400:
-                    class_info = self.icrm.class_info
+                    class_info = self.rcm.class_info
                 else:
-                    class_info = self.icrm.target_class_info
+                    class_info = self.rcm.target_class_info
             else:
                 class_info = None
             
@@ -784,7 +784,7 @@ class CATTrainer(DefaultTrainer):
             # log_to_file(proposals_bmp_predictions_unlabel, "proposals_predictions_unlabel.txt", "Proposals Predictions (Unsupervised)")
 
             with torch.no_grad():
-                self.icrm.get_matches(proposals_predictions_unlabel,self.iter, True)
+                self.rcm.get_matches(proposals_predictions_unlabel,self.iter, True)
 
             # 6. input weakly labeled data (source) and weakly unlabeled data (target) to student model
             # give sign to the target data
