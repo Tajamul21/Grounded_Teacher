@@ -113,7 +113,7 @@ For the VGG backbone, we use converted weights from [CMT](https://github.com/She
 
 ### 🔸 BoimedParse Pretrained model
 1. Download the Pretrained model checkpoint from [Google Drive Link](https://drive.google.com/file/d/1az08YAvSf2KEbX429bAu2l_4lbbpHHIM/view?usp=drive_link).
-2. Place the weights file at: `BoimedParse/pretrained/biomedparse_v1.pt`
+2. Place the weights file at: `Expert/pretrained/biomedparse_v1.pt`
 
 ---
 
@@ -123,15 +123,15 @@ The implementation follows a step-by-step process for domain adaptation in medic
 We are demonstrating the DDSM to RSNA.
 
 ### ▶️ Step 1: Source Training on DDSM
-First, ensure the `VOC_MEDICAL` path is correctly set in your `Grounded_Teacher/AASFOD/lib/datasets/config_dataset.py`.
+First, ensure the `VOC_MEDICAL` path is correctly set in your `Grounded_Teacher/Source/lib/datasets/config_dataset.py`.
 
-Download [vgg16_caffe.pth](https://drive.google.com/file/d/1YUbe9al-gmTnHA5tCX-rBqmMyhRaj_-y/view?usp=drive_link) and then change the path in `Grounded_Teacher/AASFOD/lib/model/utils/config.py`.
+Download [vgg16_caffe.pth](https://drive.google.com/file/d/1YUbe9al-gmTnHA5tCX-rBqmMyhRaj_-y/view?usp=drive_link) and then change the path in `Grounded_Teacher/Source/lib/model/utils/config.py`.
 
 - 📋 Train on source domain:
    ```bash
      cd Source
      python trainval_pretrain_adv.py \
-        --dataset voc_medical_trainval \
+        --dataset voc_medical_train \
         --dataset_t voc_medical \
         --net vgg16 \
         --log_ckpt_name "DDSMSource" \
@@ -166,7 +166,7 @@ Download [vgg16_caffe.pth](https://drive.google.com/file/d/1YUbe9al-gmTnHA5tCX-r
 ### ▶️ Step 4: Run the Grounded Teacher
 
 - 📝 Update configuration files:
-   - Set TRAIN_LABEL to RSNA_sf with AASFOD pseudo-labels
+   - Set TRAIN_LABEL to RSNA_sf with Source pseudo-labels
    - Set TRAIN_UNLABEL to RSNA
    - Set TEST to RSNA with ground truth
    - Set EXPERT_PATH to RSNA Expert pseudo-Labels
