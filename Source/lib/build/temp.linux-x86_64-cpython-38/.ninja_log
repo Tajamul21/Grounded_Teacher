@@ -1,0 +1,15 @@
+# ninja log v6
+1	9668	1740239179719558015	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cuda/ROIPool_cuda.o	c6a9e21f6d1fda7a
+1	10203	1740239179719558015	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cuda/ROIAlign_cuda.o	6134e3d945da9b46
+1	11305	1740239179719558015	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cuda/nms.o	d345b49b2730e80f
+0	13292	1740239179715558020	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cpu/ROIAlign_cpu.o	97bb0fd42c51589
+0	14020	1740239179715558020	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cpu/nms_cpu.o	901fa8da89dd8785
+2	17819	1740239179719558015	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/vision.o	a880abd0b282d700
+0	1778	1740239198435532717	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/model/utils/bbox.o	1aa2132545742e75
+2	9656	1740239200611529775	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cuda/ROIAlign_cuda.o	3a28e7105b804047
+2	10158	1740239200611529775	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cuda/ROIPool_cuda.o	62c0b4471a55b055
+3	10702	1740239200611529775	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cuda/nms.o	3fa3f5f7519aab68
+1	12927	1740239200611529775	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cpu/ROIAlign_cpu.o	eca0fca49705a024
+2	13390	1740239200611529775	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/cpu/nms_cpu.o	66b054585eabf82e
+3	17151	1740239200611529775	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/DATA/Rajes/Research/AASFOD/lib/model/csrc/vision.o	1ec9160baa204f80
+1	1595	1740239218275505880	/DATA/Rajes/Research/AASFOD/lib/build/temp.linux-x86_64-cpython-38/model/utils/bbox.o	132c70616cd26ba6
