@@ -67,7 +67,7 @@ Due to dependency conflicts, this project requires **two separate environments**
 
 ## 📁 Dataset Preparation
 
-You can download the Medical dataset from [here](https://drive.google.com/drive/folders/1NbruKnIWlKvj3VDlGQ-1l_v8H3UJbXzB?usp=sharing) 
+You can download the Medical datasets from [here](https://drive.google.com/drive/folders/1NbruKnIWlKvj3VDlGQ-1l_v8H3UJbXzB?usp=sharing) 
 
 City to Foggy dataset Structure:
 ```
