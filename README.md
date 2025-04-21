@@ -11,7 +11,6 @@
 [![](https://img.shields.io/badge/website-grounded_teacher-purple)]()
 [![](https://img.shields.io/badge/demo-hugginface-blue)]()
 [![](https://img.shields.io/badge/Arxiv-paper-red?style=plastic&logo=arxiv)]()
-[![](https://img.shields.io/badge/-Linkedin-blue?style=plastic&logo=Linkedin)]() 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
 </div>
 
