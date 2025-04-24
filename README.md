@@ -22,6 +22,8 @@
 
 ## 🎯 What is Grounded_Teacher?
 
+**Grounded Teacher (GT)** is a standard framework in Source Free Object Detection (SFOD) designed to tackle context bias and performance drop of the student model. It models contextual relationships using a dedicated relational context module and leverages this to mitigate inherent biases. GT applies augmentations to closely related classes across and within domains, enhancing underrepresented class performance while minimizing effects on dominant classes. An expert foundational branch supervises the student model, improving prediction quality under the SFOD setting.
+
 🔥 Check out our [website]() for more overview!
 
 ---
