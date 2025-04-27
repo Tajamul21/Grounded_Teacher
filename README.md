@@ -19,7 +19,7 @@
 
 ## NEWS
 - **[April 2025]** Ranked #1 on Source Free Object Detection on [Cityscapes to Foggy Cityscapes](https://paperswithcode.com/sota/source-free-object-detection-on-cityscapes-to)!
-- **[April 2025]** We released an arxiv version.. See more details in our [updated arxiv](https://arxiv.org/abs/2407.06585v1)! 
+- **[April 2025]** We released an arxiv version.. See more details in our [updated arxiv](https://arxiv.org/abs/2504.15404)! 
 
 ---
 
