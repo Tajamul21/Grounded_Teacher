@@ -244,11 +244,14 @@ We conduct all experiments with batch size 4, on 4 NVIDIA A100 GPUs.
 </div>
 
 ```bibtex
-@inproceedings{groundedteacher2025,
-  title={Context Aware Grounded Teacher for Source Free Object Detection},
-  author={},
-  booktitle={},
-  year={2025}
+@misc{ashraf2025contextawaregroundedteacher,
+      title={Context Aware Grounded Teacher for Source Free Object Detection}, 
+      author={Tajamul Ashraf and Rajes Manna and Partha Sarathi Purkayastha and Tavaheed Tariq and Janibul Bashir},
+      year={2025},
+      eprint={2504.15404},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.15404}, 
 }
 ```
 
