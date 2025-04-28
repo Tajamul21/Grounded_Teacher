@@ -4,24 +4,32 @@
 
 <div align="center">
 
-# Context Aware Grounded Teacher for Source Free Object Detection
+# [Context Aware Grounded Teacher for Source Free Object Detection](https://arxiv.org/abs/2504.15404)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/context-aware-grounded-teacher-for-source/source-free-object-detection-on-cityscapes-to)](https://paperswithcode.com/sota/source-free-object-detection-on-cityscapes-to?p=context-aware-grounded-teacher-for-source)
 [![Website](https://img.shields.io/badge/website-grounded_teacher-purple)]()
 [![Demo](https://img.shields.io/badge/demo-hugginface-blue)](https://huggingface.co/papers/2504.15404)
 [![Arxiv](https://img.shields.io/badge/Arxiv-paper-red?style=plastic&logo=arxiv)](https://arxiv.org/abs/2504.15404)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
 
-<img src="https://github.com/user-attachments/assets/4d94ee45-185b-4e10-b97e-b0a36e3ff42e" width="800px">
+
 
 </div>
+
+This is the official Pytorch implementation of Grounded Teacher:
+
+["**Grounded Teacher**"](https://arxiv.org/abs/2504.15404) by [Tajamul Ashraf](https://www.tajamulashraf.com/), [Rajes Manna](), [Partha Sarathi Purkayastha](), [Tavaheed Tariq](https://tavaheed.netlify.app/) and [Janibul Bashir](https://www.janibbashir.com/).
 
 ---
 
 ## NEWS
-- **[April 2025]** Ranked #1 on Source Free Object Detection on [Cityscapes to Foggy Cityscapes](https://paperswithcode.com/sota/source-free-object-detection-on-cityscapes-to)!
-- **[April 2025]** We released an arxiv version.. See more details in our [updated arxiv](https://arxiv.org/abs/2504.15404)! 
+- **[04/26/2025]** :collision: We achieved new SoTA with 50.8 box mAP on [Cityscapes to Foggy Cityscapes](https://paperswithcode.com/sota/source-free-object-detection-on-cityscapes-to?p=context-aware-grounded-teacher-for-source)!
+- **[04/21/2025]** We released an arxiv version.. See more details in our [updated arxiv](https://arxiv.org/abs/2504.15404)! 
 
 ---
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/4d94ee45-185b-4e10-b97e-b0a36e3ff42e" width="800px">
+</div>
 
 ## 🎯 What is Grounded_Teacher?
 
