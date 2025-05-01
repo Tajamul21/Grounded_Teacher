@@ -265,13 +265,13 @@ We conduct all experiments with batch size 4, on 4 NVIDIA A100 GPUs.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments and 🔧 Built Upon
 
-Our implementation builds upon these excellent works:
-- [CAT](https://github.com/mkLabs/CAT): Exploiting Inter-Class Dynamics for Domain Adaptive Object Detection
-- [AASFOD](https://github.com/aasfod/official): Source-Free Object Detection architecture
-- [BiomedParse](https://github.com/microsoft/BiomedParse): A Foundation Model for Biomedical Objects
+Our implementation builds upon the following excellent repositories and research contributions:
 
+- [CAT](https://github.com/mkLabs/CAT), [AASFOD](https://github.com/aasfod/official), and [BiomedParse](https://github.com/microsoft/BiomedParse): 
+
+We thank the authors for making their work publicly available and foundational to this project.
 <div align="center">
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif">
 </div>
