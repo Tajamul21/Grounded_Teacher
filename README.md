@@ -259,8 +259,6 @@ We thank the authors for making their work publicly available.
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif">
 </div>
 
----
-
 
 ## 📚 Citation
 <div align="left">
@@ -278,5 +276,3 @@ We thank the authors for making their work publicly available.
       url={https://arxiv.org/abs/2504.15404}, 
 }
 ```
-
----
