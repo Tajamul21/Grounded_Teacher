@@ -8,8 +8,7 @@
 <div align="center">
 
 # [Context Aware Grounded Teacher for Source Free Object Detection](https://arxiv.org/abs/2504.15404)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/context-aware-grounded-teacher-for-source/source-free-object-detection-on-cityscapes-to)](https://paperswithcode.com/sota/source-free-object-detection-on-cityscapes-to?p=context-aware-grounded-teacher-for-source)
-[![Website](https://img.shields.io/badge/website-grounded_teacher-purple)]()
+[![Website](https://img.shields.io/badge/website-grounded_teacher-purple)](https://gaash-lab.github.io/GT-website/)
 [![Demo](https://img.shields.io/badge/demo-hugginface-blue)](https://huggingface.co/papers/2504.15404)
 [![Arxiv](https://img.shields.io/badge/Arxiv-paper-red?style=plastic&logo=arxiv)](https://arxiv.org/abs/2504.15404)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
@@ -25,20 +24,25 @@ This is the official Pytorch implementation of Grounded Teacher:
 ---
 
 ## NEWS
+- **[18/05/2026]** :collision: Our paper has been accepted to IJCV 🎉
 - **[04/26/2025]** :collision: We achieved new SoTA with 50.8 box mAP on [Cityscapes to Foggy Cityscapes](https://paperswithcode.com/sota/source-free-object-detection-on-cityscapes-to?p=context-aware-grounded-teacher-for-source)!
 - **[04/21/2025]** We released an arxiv version.. See more details in our [updated arxiv](https://arxiv.org/abs/2504.15404)! 
 
 ---
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/4d94ee45-185b-4e10-b97e-b0a36e3ff42e" width="800px">
+<img width="1059" height="568" alt="image" src="https://github.com/user-attachments/assets/aa6c4ad5-e0de-49b8-b815-4a5f7bbe73e0" width="800px"/>
 </div>
+
+
+
+
 
 ## 🎯 What is Grounded_Teacher?
 
 **Grounded Teacher (GT)** is a standard framework in Source Free Object Detection (SFOD) designed to tackle context bias and performance drop of the student model. It models contextual relationships using a dedicated relational context module and leverages this to mitigate inherent biases. GT applies augmentations to closely related classes across and within domains, enhancing underrepresented class performance while minimizing effects on dominant classes. An expert foundational branch supervises the student model, improving prediction quality under the SFOD setting.
 
-🔥 Check out our [website]() for more overview!
+🔥 Check out our [website](https://gaash-lab.github.io/GT-website/) for more overview!
 
 ---
 
