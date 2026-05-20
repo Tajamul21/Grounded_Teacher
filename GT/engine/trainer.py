@@ -15,7 +15,7 @@ from detectron2.engine.train_loop import AMPTrainer
 from detectron2.utils.events import EventStorage
 from detectron2.evaluation import verify_results, DatasetEvaluators
 # from detectron2.evaluation import COCOEvaluator, verify_results, DatasetEvaluators
-
+# from detectron2.evaluation import COCOEvaluator, verify_results, DatasetEvaluators
 from detectron2.data.dataset_mapper import DatasetMapper
 from detectron2.engine import hooks
 from detectron2.structures.boxes import Boxes
