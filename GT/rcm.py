@@ -8,6 +8,7 @@ import os
 from detectron2.layers import cat
 import detectron2.utils.comm as comm
 import numpy as np
+import os
 
 
 class RCM:
