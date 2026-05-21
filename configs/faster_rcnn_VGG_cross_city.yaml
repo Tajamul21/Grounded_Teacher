@@ -16,7 +16,7 @@ MODEL:
   ROI_HEADS:
     NAME: "StandardROIHeadsPseudoLab"
     LOSS: "CrossEntropy" # variant: "CrossEntropy"
-    NUM_CLASSES: 1
+    NUM_CLASSES: 7
     IN_FEATURES: ["vgg4"]
   ROI_BOX_HEAD:
     NAME: "FastRCNNConvFCHead"
@@ -36,10 +36,10 @@ DATALOADER:
   SUP_PERCENT: 100.0
 DATASETS:
   CROSS_DATASET: True
-  TRAIN_LABEL: ("VOC2007_rsna_sf_train",)
-  TRAIN_UNLABEL: ("VOC2007_rsna_train",)
-  TEST: ("VOC2007_inb_test",)
-  EXPERT_PATH: 'Expert_Labels/rsna_results.txt'
+  TRAIN_LABEL: ("VOC2007foggy_sf_train",)
+  TRAIN_UNLABEL: ("VOC2007_citytrain",)
+  TEST: ("VOC2007_citytest",)
+  EXPERT_PATH: 'Expert_Labels/empty.txt'
 SEMISUPNET:
   Trainer: "GT"
   BBOX_THRESHOLD: 0.8

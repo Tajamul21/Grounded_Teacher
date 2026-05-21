@@ -123,6 +123,17 @@ class PseudoLabRPN(RPN):
         else:  # inference
             losses = {}
 
+        # --- NEW NaN/Inf Handling ---
+        def sanitize(tensor, name):
+            if torch.isnan(tensor).any() or torch.isinf(tensor).any():
+                print(f"[Warning] NaN/Inf detected in {name}. Replacing with finite values.")
+                tensor = torch.nan_to_num(tensor, nan=0.0, posinf=1e5, neginf=-1e5)
+            return tensor
+
+        pred_objectness_logits = [sanitize(t, "pred_objectness_logits") for t in pred_objectness_logits]
+        pred_anchor_deltas = [sanitize(t, "pred_anchor_deltas") for t in pred_anchor_deltas]
+        # --------------------------------
+
         proposals = self.predict_proposals(
             anchors, pred_objectness_logits, pred_anchor_deltas, images.image_sizes
         )

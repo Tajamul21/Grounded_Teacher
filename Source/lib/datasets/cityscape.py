@@ -43,7 +43,8 @@ class cityscape(imdb):
                          'bus', 'bicycle', 'car', 'motorcycle', 'person', 'rider', 'train', 'truck')
         self._class_to_ind = dict(zip(self.classes, xrange(self.num_classes)))
 
-        self._image_ext = '.jpg'
+        # self._image_ext = '.jpg'
+        self._image_ext = '.png'
         self._image_index = self._load_image_set_index()
         self._roidb_handler = self.gt_roidb
         self._salt = str(uuid.uuid4())

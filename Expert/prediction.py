@@ -25,9 +25,8 @@ results_dir = args.output
 if not os.path.exists(results_dir):
     os.makedirs(results_dir)
 datasets = {
-    "ddsm": os.path.join(root, "DDSM/VOC2007/JPEGImages/"),
-    "inb": os.path.join(root, "INBreast/VOC2007/JPEGImages/"),
-    "rsna": os.path.join(root, "RSNA/VOC2007/JPEGImages/"),
+    # "lcm": os.path.join(root, "LCM/VOC2007/JPEGImages/"),
+    "brats": os.path.join(root, "BraTS/VOC2007/JPEGImages/"),
 }
 
 # Load model
@@ -39,7 +38,9 @@ with torch.no_grad():
     model.model.sem_seg_head.predictor.lang_encoder.get_text_embeddings(BIOMED_CLASSES + ["background"], is_eval=True)
 
 # Prompts
-prompts = ['mal']
+# prompts = ['gametocyte', 'ring', 'schizont', 'trophozoite']
+prompts = ['tumor']
+
 
 # Inference loop for each dataset
 for dataset_name, image_dir in datasets.items():

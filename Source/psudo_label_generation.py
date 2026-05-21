@@ -285,14 +285,15 @@ if __name__ == '__main__':
 # for natural dataset
 class_mapping = {
     0: "__background__",
-    1: 'bus',
-    2:'bicycle', 
-    3:'car', 
-    4:'motorcycle', 
-    5:'person', 
-    6:'rider', 
-    7:'train', 
-    8:'truck'
+    # 1: 'bus',
+    # 2:'bicycle', 
+    # 3:'car', 
+    # 4:'motorcycle', 
+    # 5:'person', 
+    # 6:'rider', 
+    # 7:'train', 
+    # 8:'truck'
+    1: 'tumor'
 }
 
 
@@ -300,7 +301,7 @@ for step in range(len(dataloader_t)):
     data_t = next(data_iter_t)
     img_path = data_t[-2][0]
     img_filename = os.path.basename(img_path)
-    xml_path = os.path.join(output_dir, img_filename.replace(".jpg", ".xml"))
+    xml_path = os.path.join(output_dir, img_filename.replace(".png", ".xml"))
     if os.path.exists(xml_path):
         print(f"Skipping {img_filename} as {xml_path} already exists.")
         continue

@@ -1,0 +1,3170 @@
+[
+    {
+        "file_name": "munster_000053_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    247.4,
+                    360.8,
+                    392.7
+                ]
+            ],
+            "scores": [
+                0.985
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000026_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    643.0,
+                    249.1,
+                    1199.0,
+                    393.5
+                ]
+            ],
+            "scores": [
+                0.904
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000253_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    123.1,
+                    244.7,
+                    1005.5,
+                    393.7
+                ]
+            ],
+            "scores": [
+                0.927
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000253_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    146.3,
+                    256.2,
+                    1017.6,
+                    376.6
+                ]
+            ],
+            "scores": [
+                0.844
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000031_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    413.7,
+                    224.9,
+                    1121.5,
+                    344.2
+                ]
+            ],
+            "scores": [
+                0.989
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000307_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    225.6,
+                    252.5,
+                    1100.5,
+                    366.2
+                ]
+            ],
+            "scores": [
+                0.989
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000258_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    872.5,
+                    252.2,
+                    937.3,
+                    315.7
+                ]
+            ],
+            "scores": [
+                0.51
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000148_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    486.3,
+                    270.8,
+                    732.4,
+                    336.3
+                ]
+            ],
+            "scores": [
+                0.988
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000103_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    537.0,
+                    258.5,
+                    897.0,
+                    317.7
+                ]
+            ],
+            "scores": [
+                0.948
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000027_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    258.1,
+                    498.7,
+                    400.6
+                ]
+            ],
+            "scores": [
+                0.983
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000172_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    899.7,
+                    255.6,
+                    965.1,
+                    335.7
+                ]
+            ],
+            "scores": [
+                0.705
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000147_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    2.2,
+                    271.4,
+                    276.5,
+                    341.8
+                ]
+            ],
+            "scores": [
+                0.966
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_017842_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    737.3,
+                    220.5,
+                    882.7,
+                    298.3
+                ]
+            ],
+            "scores": [
+                0.9
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_038245_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    802.1,
+                    219.1,
+                    1199.0,
+                    352.2
+                ]
+            ],
+            "scores": [
+                0.713
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_008206_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    1145.9,
+                    243.6,
+                    1199.0,
+                    310.7
+                ]
+            ],
+            "scores": [
+                0.886
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_013942_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    1069.3,
+                    282.8,
+                    1143.9,
+                    360.7
+                ]
+            ],
+            "scores": [
+                0.612
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000046_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    901.1,
+                    221.3,
+                    1199.0,
+                    356.1
+                ]
+            ],
+            "scores": [
+                0.956
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000102_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    205.6,
+                    244.1,
+                    1199.0,
+                    322.7
+                ]
+            ],
+            "scores": [
+                0.95
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000142_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    142.3,
+                    262.3,
+                    862.4,
+                    376.6
+                ]
+            ],
+            "scores": [
+                0.977
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000133_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    1045.0,
+                    234.5,
+                    1145.0,
+                    335.0
+                ]
+            ],
+            "scores": [
+                0.872
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000220_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    13.7,
+                    227.9,
+                    1144.2,
+                    435.4
+                ]
+            ],
+            "scores": [
+                0.925
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000013_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    154.1,
+                    282.5,
+                    480.5,
+                    357.7
+                ]
+            ],
+            "scores": [
+                0.476
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "lindau_000024_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    284.9,
+                    920.9,
+                    512.4
+                ]
+            ],
+            "scores": [
+                0.685
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_049698_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    988.5,
+                    396.1,
+                    1057.2,
+                    459.6
+                ]
+            ],
+            "scores": [
+                0.763
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_055538_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    1013.6,
+                    237.8,
+                    1199.0,
+                    342.0
+                ]
+            ],
+            "scores": [
+                0.591
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "lindau_000031_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    80.9,
+                    253.9,
+                    1009.7,
+                    408.4
+                ]
+            ],
+            "scores": [
+                0.986
+            ],
+            "cls_pred": [
+                8
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000173_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    291.9,
+                    40.5,
+                    1199.0,
+                    487.2
+                ]
+            ],
+            "scores": [
+                0.981
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000126_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    201.8,
+                    648.0,
+                    430.5
+                ]
+            ],
+            "scores": [
+                0.999
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000212_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    395.9,
+                    233.0,
+                    1007.6,
+                    373.9
+                ]
+            ],
+            "scores": [
+                0.996
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000261_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    138.1,
+                    220.3,
+                    738.4,
+                    386.5
+                ]
+            ],
+            "scores": [
+                0.988
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000247_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    216.7,
+                    184.5,
+                    1199.0,
+                    418.5
+                ]
+            ],
+            "scores": [
+                0.998
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000206_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    153.4,
+                    193.8,
+                    1199.0,
+                    479.5
+                ]
+            ],
+            "scores": [
+                0.994
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000109_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    212.3,
+                    208.1,
+                    1199.0,
+                    534.3
+                ]
+            ],
+            "scores": [
+                0.995
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000245_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    183.0,
+                    221.6,
+                    1199.0,
+                    560.6
+                ]
+            ],
+            "scores": [
+                0.997
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000020_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    410.3,
+                    212.7,
+                    1199.0,
+                    329.0
+                ]
+            ],
+            "scores": [
+                0.99
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000308_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    114.1,
+                    818.8,
+                    599.0
+                ]
+            ],
+            "scores": [
+                0.979
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000255_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    129.7,
+                    234.6,
+                    1192.0,
+                    503.1
+                ]
+            ],
+            "scores": [
+                0.998
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000214_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    209.9,
+                    1131.0,
+                    548.7
+                ]
+            ],
+            "scores": [
+                0.997
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000096_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    189.9,
+                    867.2,
+                    428.4
+                ]
+            ],
+            "scores": [
+                0.995
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000161_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    259.3,
+                    1101.1,
+                    522.2
+                ]
+            ],
+            "scores": [
+                0.992
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000260_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    222.8,
+                    196.8,
+                    1119.3,
+                    333.0
+                ]
+            ],
+            "scores": [
+                0.505
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000293_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    40.6,
+                    235.7,
+                    1159.1,
+                    451.6
+                ]
+            ],
+            "scores": [
+                0.99
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000243_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    215.0,
+                    201.2,
+                    1199.0,
+                    548.4
+                ]
+            ],
+            "scores": [
+                0.993
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000233_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    396.7,
+                    222.1,
+                    669.2,
+                    344.7
+                ]
+            ],
+            "scores": [
+                0.844
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000161_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    66.2,
+                    259.4,
+                    1144.6,
+                    487.3
+                ]
+            ],
+            "scores": [
+                0.995
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000183_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    654.4,
+                    270.1,
+                    920.2,
+                    361.1
+                ]
+            ],
+            "scores": [
+                0.579
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000219_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    316.8,
+                    167.8,
+                    1199.0,
+                    479.0
+                ]
+            ],
+            "scores": [
+                0.997
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000295_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    229.3,
+                    1045.0,
+                    390.3
+                ]
+            ],
+            "scores": [
+                0.997
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000199_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    221.7,
+                    625.5,
+                    374.1
+                ]
+            ],
+            "scores": [
+                0.906
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000277_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    112.3,
+                    192.5,
+                    1199.0,
+                    530.2
+                ]
+            ],
+            "scores": [
+                0.962
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000001_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    20.6,
+                    235.7,
+                    439.3,
+                    444.7
+                ]
+            ],
+            "scores": [
+                0.999
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000162_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    476.0,
+                    222.0,
+                    526.9,
+                    259.0
+                ]
+            ],
+            "scores": [
+                0.887
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000243_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    28.0,
+                    188.1,
+                    1173.3,
+                    462.7
+                ]
+            ],
+            "scores": [
+                0.999
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000181_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    193.2,
+                    907.0,
+                    353.9
+                ]
+            ],
+            "scores": [
+                0.912
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000092_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    216.8,
+                    764.9,
+                    427.6
+                ]
+            ],
+            "scores": [
+                0.997
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000268_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    181.1,
+                    842.1,
+                    488.4
+                ]
+            ],
+            "scores": [
+                0.992
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000280_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    642.2,
+                    229.8,
+                    1159.5,
+                    430.7
+                ]
+            ],
+            "scores": [
+                0.997
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000122_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    94.7,
+                    210.2,
+                    1183.8,
+                    378.6
+                ]
+            ],
+            "scores": [
+                0.951
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000196_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    228.9,
+                    987.1,
+                    367.0
+                ]
+            ],
+            "scores": [
+                0.998
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000258_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    151.9,
+                    212.4,
+                    916.7,
+                    318.1
+                ]
+            ],
+            "scores": [
+                0.966
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000192_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    681.2,
+                    244.3,
+                    1163.5,
+                    452.8
+                ]
+            ],
+            "scores": [
+                0.996
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000181_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    200.9,
+                    955.5,
+                    372.0
+                ]
+            ],
+            "scores": [
+                0.965
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000212_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    438.9,
+                    240.6,
+                    1094.6,
+                    381.8
+                ]
+            ],
+            "scores": [
+                0.713
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000219_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    186.0,
+                    214.2,
+                    1199.0,
+                    455.2
+                ]
+            ],
+            "scores": [
+                0.992
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000032_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    133.2,
+                    217.6,
+                    1125.4,
+                    392.8
+                ]
+            ],
+            "scores": [
+                0.932
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000004_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    387.2,
+                    216.7,
+                    882.0,
+                    555.6
+                ]
+            ],
+            "scores": [
+                0.984
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000212_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    434.6,
+                    236.8,
+                    1056.6,
+                    380.9
+                ]
+            ],
+            "scores": [
+                0.979
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000228_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    314.6,
+                    228.5,
+                    1012.1,
+                    371.3
+                ]
+            ],
+            "scores": [
+                0.991
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000004_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    382.3,
+                    212.1,
+                    884.2,
+                    560.6
+                ]
+            ],
+            "scores": [
+                0.978
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000255_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    156.3,
+                    248.3,
+                    1199.0,
+                    506.0
+                ]
+            ],
+            "scores": [
+                0.982
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000153_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    200.1,
+                    1012.7,
+                    410.4
+                ]
+            ],
+            "scores": [
+                0.995
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000236_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    183.4,
+                    789.0,
+                    599.0
+                ]
+            ],
+            "scores": [
+                0.997
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000064_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    406.6,
+                    185.2,
+                    651.1,
+                    374.8
+                ]
+            ],
+            "scores": [
+                0.96
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000260_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    201.4,
+                    960.1,
+                    350.0
+                ]
+            ],
+            "scores": [
+                0.993
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000135_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    349.9,
+                    265.3,
+                    1068.3,
+                    423.3
+                ]
+            ],
+            "scores": [
+                0.943
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000229_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    153.0,
+                    983.9,
+                    492.7
+                ]
+            ],
+            "scores": [
+                0.995
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000048_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    690.6,
+                    308.1,
+                    1014.9,
+                    363.3
+                ]
+            ],
+            "scores": [
+                0.637
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000065_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    116.2,
+                    245.1,
+                    1199.0,
+                    466.7
+                ]
+            ],
+            "scores": [
+                0.996
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_067295_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    218.6,
+                    616.5,
+                    344.0
+                ]
+            ],
+            "scores": [
+                0.835
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_003056_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    119.2,
+                    110.4,
+                    1199.0,
+                    367.9
+                ]
+            ],
+            "scores": [
+                0.968
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_079206_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    194.6,
+                    947.1,
+                    387.8
+                ]
+            ],
+            "scores": [
+                0.931
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_018797_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    119.6,
+                    204.4,
+                    805.7,
+                    359.8
+                ]
+            ],
+            "scores": [
+                0.892
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_068772_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    205.7,
+                    955.6,
+                    489.2
+                ]
+            ],
+            "scores": [
+                0.965
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_044227_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    78.5,
+                    225.0,
+                    769.6,
+                    338.3
+                ]
+            ],
+            "scores": [
+                0.862
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000027_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    79.8,
+                    188.3,
+                    1199.0,
+                    450.4
+                ]
+            ],
+            "scores": [
+                0.992
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000065_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    309.2,
+                    183.7,
+                    1199.0,
+                    461.5
+                ]
+            ],
+            "scores": [
+                0.981
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000124_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    490.7,
+                    221.2,
+                    1140.2,
+                    389.5
+                ]
+            ],
+            "scores": [
+                0.756
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000082_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    4.2,
+                    203.4,
+                    1129.3,
+                    503.8
+                ]
+            ],
+            "scores": [
+                0.997
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000034_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    117.5,
+                    171.7,
+                    1183.6,
+                    419.9
+                ]
+            ],
+            "scores": [
+                0.994
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000036_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    643.0,
+                    225.9,
+                    1199.0,
+                    458.9
+                ]
+            ],
+            "scores": [
+                0.98
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000137_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    248.6,
+                    245.2,
+                    453.8,
+                    336.7
+                ]
+            ],
+            "scores": [
+                0.8
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000011_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    365.6,
+                    217.8,
+                    1199.0,
+                    530.1
+                ]
+            ],
+            "scores": [
+                0.99
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000153_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    237.3,
+                    227.5,
+                    1199.0,
+                    516.0
+                ]
+            ],
+            "scores": [
+                0.968
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000033_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    176.7,
+                    838.8,
+                    394.2
+                ]
+            ],
+            "scores": [
+                0.496
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_078803_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    324.7,
+                    217.1,
+                    1199.0,
+                    594.0
+                ]
+            ],
+            "scores": [
+                0.961
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000163_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    409.3,
+                    224.0,
+                    1199.0,
+                    593.7
+                ]
+            ],
+            "scores": [
+                0.994
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000117_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    508.2,
+                    240.7,
+                    1199.0,
+                    366.3
+                ]
+            ],
+            "scores": [
+                0.861
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000304_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    241.3,
+                    197.5,
+                    1199.0,
+                    478.0
+                ]
+            ],
+            "scores": [
+                0.986
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000224_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    182.7,
+                    267.7,
+                    1199.0,
+                    467.1
+                ]
+            ],
+            "scores": [
+                0.983
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000175_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    23.0,
+                    230.9,
+                    1149.9,
+                    536.1
+                ]
+            ],
+            "scores": [
+                0.977
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000097_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    245.7,
+                    1021.3,
+                    498.9
+                ]
+            ],
+            "scores": [
+                0.995
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000081_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    212.2,
+                    975.5,
+                    400.3
+                ]
+            ],
+            "scores": [
+                0.996
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000289_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    105.5,
+                    205.6,
+                    1192.2,
+                    500.8
+                ]
+            ],
+            "scores": [
+                0.996
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000049_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    849.1,
+                    226.5,
+                    1155.3,
+                    317.3
+                ]
+            ],
+            "scores": [
+                0.999
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000038_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    16.3,
+                    223.6,
+                    589.3,
+                    348.9
+                ]
+            ],
+            "scores": [
+                0.993
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_071288_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    238.1,
+                    165.8,
+                    1199.0,
+                    387.9
+                ]
+            ],
+            "scores": [
+                0.984
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_064651_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    195.7,
+                    1015.9,
+                    417.6
+                ]
+            ],
+            "scores": [
+                0.944
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_015676_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    58.7,
+                    162.0,
+                    1168.2,
+                    337.4
+                ]
+            ],
+            "scores": [
+                0.959
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_021825_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    234.7,
+                    842.4,
+                    522.2
+                ]
+            ],
+            "scores": [
+                0.972
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "lindau_000044_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    153.7,
+                    182.9,
+                    1199.0,
+                    473.6
+                ]
+            ],
+            "scores": [
+                0.993
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "lindau_000003_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    352.9,
+                    243.5,
+                    950.0,
+                    359.7
+                ]
+            ],
+            "scores": [
+                0.768
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "lindau_000044_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    171.4,
+                    197.8,
+                    1199.0,
+                    496.1
+                ]
+            ],
+            "scores": [
+                0.992
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "lindau_000044_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    168.0,
+                    182.3,
+                    1199.0,
+                    453.8
+                ]
+            ],
+            "scores": [
+                0.991
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "lindau_000004_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.5,
+                    242.7,
+                    997.9,
+                    334.0
+                ]
+            ],
+            "scores": [
+                0.976
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000246_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    178.8,
+                    188.4,
+                    1199.0,
+                    472.4
+                ]
+            ],
+            "scores": [
+                0.996
+            ],
+            "cls_pred": [
+                3
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000296_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000171_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000079_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000016_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000057_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000103_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000159_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000198_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000231_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000251_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000141_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000269_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000021_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000033_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000197_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000251_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_062793_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000002_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_009561_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_002196_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_015389_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_012121_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000169_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000037_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_004617_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_020287_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000145_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000299_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000302_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000001_048654_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_011074_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "lindau_000012_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "lindau_000056_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000035_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [],
+            "scores": [],
+            "cls_pred": []
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000164_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    771.3,
+                    262.5,
+                    846.0,
+                    351.8
+                ]
+            ],
+            "scores": [
+                0.985
+            ],
+            "cls_pred": [
+                7
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000054_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    788.8,
+                    265.4,
+                    898.8,
+                    360.0
+                ]
+            ],
+            "scores": [
+                0.94
+            ],
+            "cls_pred": [
+                7
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "frankfurt_000000_015389_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    885.1,
+                    233.4,
+                    948.7,
+                    302.6
+                ]
+            ],
+            "scores": [
+                0.899
+            ],
+            "cls_pred": [
+                7
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000144_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    512.5,
+                    210.6,
+                    581.6,
+                    266.8
+                ]
+            ],
+            "scores": [
+                0.482
+            ],
+            "cls_pred": [
+                5
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000051_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    709.5,
+                    169.9,
+                    940.7,
+                    312.9
+                ]
+            ],
+            "scores": [
+                0.976
+            ],
+            "cls_pred": [
+                5
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000239_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    130.4,
+                    570.5,
+                    299.7
+                ]
+            ],
+            "scores": [
+                0.857
+            ],
+            "cls_pred": [
+                6
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000075_000019_leftImg8bit_foggy_beta_0.005.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    87.3,
+                    709.6,
+                    303.2
+                ]
+            ],
+            "scores": [
+                0.945
+            ],
+            "cls_pred": [
+                6
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000169_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    0.0,
+                    0.0,
+                    327.2,
+                    426.1
+                ]
+            ],
+            "scores": [
+                0.961
+            ],
+            "cls_pred": [
+                6
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000057_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    323.9,
+                    235.8,
+                    380.4,
+                    326.5
+                ]
+            ],
+            "scores": [
+                0.961
+            ],
+            "cls_pred": [
+                2
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000000_000019_leftImg8bit_foggy_beta_0.02.png",
+        "pred": {
+            "boxes": [
+                [
+                    198.6,
+                    217.8,
+                    342.0,
+                    355.5
+                ]
+            ],
+            "scores": [
+                0.875
+            ],
+            "cls_pred": [
+                2
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "munster_000131_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    963.4,
+                    174.0,
+                    1032.3,
+                    342.4
+                ]
+            ],
+            "scores": [
+                0.933
+            ],
+            "cls_pred": [
+                2
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    },
+    {
+        "file_name": "bremen_000099_000019_leftImg8bit_foggy_beta_0.01.png",
+        "pred": {
+            "boxes": [
+                [
+                    764.9,
+                    87.5,
+                    1021.5,
+                    341.5
+                ]
+            ],
+            "scores": [
+                0.982
+            ],
+            "cls_pred": [
+                4
+            ]
+        },
+        "target": {
+            "boxes": []
+        }
+    }
+]

@@ -107,7 +107,7 @@ def load_coco_unlabel_json(
     return dataset_dicts
 
 
-_root = os.getenv("DETECTRON2_DATASETS", "/DATA/Rajes/BCD/VOC")
+_root = os.getenv("DETECTRON2_DATASETS", "/DATA/Tawheed/Dataset/Natural")
 register_coco_unlabel(_root)
 
 
@@ -189,30 +189,51 @@ def register_all_water(root):
 
 def register_all_pascal_voc(root):
     SPLITS = [
-        ("VOC2007_citytrain", 'cityscapes_voc_notrain', "trainval", 7),
-        ("VOC2007_bddtrain", 'bdd100k_voc', "trainval", 7),
-        ("VOC2007_bddval", 'bdd100k_voc', "test", 7),
-        ("VOC2007_ddsm_train", 'DDSM/VOC2007', "train", 1),
-        ("VOC2007_ddsm_test", 'DDSM/VOC2007', "test", 1),
-        ("VOC2007_ddsm_val", 'DDSM/VOC2007', "val", 1),
-        ("VOC2007_inb_train", 'INBreast/VOC2007', "train", 1),
-        ("VOC2007_inb_test", 'INBreast/VOC2007', "test", 1),
-        ("VOC2007_inb_val", 'INBreast/VOC2007', "val", 1),
-        ("VOC2007_rsna_train", 'RSNA/VOC2007', "train", 1),
-        ("VOC2007_rsna_test", 'RSNA/VOC2007', "test", 1),
-        ("VOC2007_rsna_val", 'RSNA/VOC2007', "val", 1),
-        ("VOC2007_inb_sf_train", 'INBreast_sf/VOC2007', "train", 1),
-        ("VOC2007_inb_sf_test", 'INBreast_sf/VOC2007', "test", 1),
-        ("VOC2007_inb_sf_val", 'INBreast_sf/VOC2007', "val", 1),
-        ("VOC2007_rsna_sf_train", 'RSNA_sf/VOC2007', "train", 1),
-        ("VOC2007_rsna_sf_test", 'RSNA_sf/VOC2007', "test", 1),
-        ("VOC2007_rsna_sf_val", 'RSNA_sf/VOC2007', "val", 1),
-        
+        ("VOC2007_citytrain", 'VOCFoggy/VOC2007', "trainval", 7),
+        ("VOC2007_cityval", 'VOCFoggy/VOC2007', "val", 7),
+        ("VOC2007_citytest", 'VOCFoggy/VOC2007', "test", 7),
+        ("VOC2007foggy_sf_train", 'VOCFoggy/VOC2007', "trainval", 7),
+        ("VOC2007foggy_sf_val", 'VOCFoggy/VOC2007', "val", 7),
+        ("VOC2007foggy_sf_test", 'VOCFoggy/VOC2007', "test", 7),
+        # ("VOC2007_bddtrain", 'bdd100k_voc', "trainval", 7),
+        # ("VOC2007_bddval", 'bdd100k_voc', "test", 7),
+        # ("VOC2007_ddsm_train", 'DDSM/VOC2007', "train", 1),
+        # ("VOC2007_ddsm_test", 'DDSM/VOC2007', "test", 1),
+        # ("VOC2007_ddsm_val", 'DDSM/VOC2007', "val", 1),
+        # ("VOC2007_inb_train", 'INBreast/VOC2007', "train", 1),
+        # ("VOC2007_inb_test", 'INBreast/VOC2007', "test", 1),
+        # ("VOC2007_inb_val", 'INBreast/VOC2007', "val", 1),
+        # ("VOC2007_rsna_train", 'RSNA/VOC2007', "train", 1),
+        # ("VOC2007_rsna_test", 'RSNA/VOC2007', "test", 1),
+        # ("VOC2007_rsna_val", 'RSNA/VOC2007', "val", 1),
+        # ("VOC2007_inb_sf_train", 'INBreast_dr/VOC2007', "train", 1),
+        # ("VOC2007_inb_sf_test", 'INBreast_dr/VOC2007', "test", 1),
+        # ("VOC2007_inb_sf_val", 'INBreast_dr/VOC2007', "val", 1),
+        # ("VOC2007_rsna_sf_train", 'RSNA_sf/VOC2007', "train", 1),
+        # ("VOC2007_rsna_sf_test", 'RSNA_sf/VOC2007', "test", 1),
+        # ("VOC2007_rsna_sf_val", 'RSNA_sf/VOC2007', "val", 1),
+        # ("VOC2007_lcm_train", 'LCM/VOC2007', "train", 4),
+        # ("VOC2007_lcm_val", 'LCM/VOC2007', "val", 4),
+        # ("VOC2007_lcm_test", 'LCM/VOC2007', "test", 4),
+        # ("VOC2007_lcm_dr_train", 'LCM_dr/VOC2007', "train", 4),
+        # ("VOC2007_lcm_dr_val", 'LCM_dr/VOC2007', "val", 4),
+        # ("VOC2007_lcm_dr_test", 'LCM_dr/VOC2007', "test", 4),
+        # ("VOC2007_inseg1_train", 'InsegCat_1_voc/VOC2007', "train", 1),
+        # ("VOC2007_inseg1_test", 'InsegCat_1_voc/VOC2007', "test", 1),
+        # ("VOC2007_inseg1_sf_test", 'InsegCat_1_voc_sf/VOC2007', "test", 1),
+        # ("VOC2007_inseg1_dr_train", 'InsegCat_1_dr/VOC2007', "train", 1),
+        # ("VOC2007_inseg1_dr_test", 'InsegCat_1_dr/VOC2007', "test", 1),
+        # ("VOC2007_brats_sf_train", 'BraTS_sf/VOC2007', "train", 1),
+        # ("VOC2007_brats_sf_test", 'BraTS_sf/VOC2007', "test", 1),
+        # ("VOC2007_brats_sf_val", 'BraTS_sf/VOC2007', "val", 1),
     ]
     for name, dirname, split, cls in SPLITS:
         year = 2012
         if cls == 1:
             class_names = ('mal',)
+            # class_names = ('tumor',)
+        elif cls == 4:
+            class_names = ('gametocyte', 'ring', 'schizont', 'trophozoite')
         elif cls == 20:
             class_names = (
                 "aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat",
@@ -222,7 +243,7 @@ def register_all_pascal_voc(root):
         elif cls == 8:
             class_names = ('truck', 'car', 'rider', 'person', 'train', 'motorcycle', 'bicycle', 'bus')
         elif cls == 7:
-            class_names = ('truck', 'car', 'rider', 'person', 'motorcycle', 'bicycle', 'bus')
+            class_names = ('truck', 'car', 'rider', 'train', 'motorcycle', 'bicycle', 'bus')
         else:
             raise RuntimeError
         register_pascal_voc(name, os.path.join(root, dirname), split, year, class_names)

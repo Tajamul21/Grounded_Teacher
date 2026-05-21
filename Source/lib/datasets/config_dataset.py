@@ -28,7 +28,7 @@ __D.FOGGYCITY = "/DATA/Rajes/ODDatasets/Natural/VOC/Foggy-Cityscapes-VOCdevkit20
 
 
 # __D.PASCAL = "/DATA/Rajes/ODDatasets/Natural/VOC/VOCdevkit"
-__D.VOC_MEDICAL = "/DATA/Rajes/BCD/VOC/INBreast"
+__D.VOC_MEDICAL = "/DATA/Tawheed/Dataset/Natural/VOCFoggy"
 
 
 # Split the dataset into two parts using select_by_uncertainty.py

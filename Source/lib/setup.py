@@ -11,7 +11,11 @@ from torch.utils.cpp_extension import CUDA_HOME
 from torch.utils.cpp_extension import CppExtension
 from torch.utils.cpp_extension import CUDAExtension
 import numpy
-requirements = ["torch", "torchvision"]
+# requirements = [
+#     "torch==2.4.1",
+#     "torchvision==0.19.1",
+#     "numpy"
+# ]
 
 
 

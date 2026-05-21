@@ -239,7 +239,8 @@ def voc_eval_txt(detpath,
         # load annotations
         recs = {}
         for i, imagename in enumerate(imagenames):
-            recs[imagename] = parse_rec_txt(annopath.format(os.path.basename(imagename).replace('.jpg', '')))
+            # recs[imagename] = parse_rec_txt(annopath.format(os.path.basename(imagename).replace('.jpg', '')))
+            recs[imagename] = parse_rec_txt(annopath.format(os.path.basename(imagename).replace('.png', '')))
             if i % 100 == 0:
                 print('Reading annotation for {:d}/{:d}'.format(
                     i + 1, len(imagenames)))
