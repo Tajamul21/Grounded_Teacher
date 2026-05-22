@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://www.tajamulashraf.com/"><b>Tajamul Ashraf</b></a> &nbsp;•&nbsp;
-  <b>Rajes Manna</b><sup>2</sup> &nbsp;•&nbsp;
+  <b>Rajes Manna</b>&nbsp;•&nbsp;
   <b>Partha Sarathi Purkayastha</b> &nbsp;•&nbsp;
   <a href="https://tavaheed.netlify.app/"><b>Tavaheed Tariq</b></a> &nbsp;•&nbsp;
   <a href="https://www.janibbashir.com/"><b>Janibul Bashir</b></a>
