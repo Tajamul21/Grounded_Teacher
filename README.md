@@ -30,10 +30,58 @@ This is the official Pytorch implementation of Grounded Teacher:
 
 ---
 
+
+redesign it also write authors and full name of ijcv 
+<!-- HERO BANNER -->
 <div align="center">
-<img width="1059" height="568" alt="image" src="https://github.com/user-attachments/assets/aa6c4ad5-e0de-49b8-b815-4a5f7bbe73e0" width="800px"/>
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </div>
 
+<br/>
+
+<div align="center">
+
+# Context Aware Grounded Teacher for Source-Free Object Detection
+
+### International Journal of Computer Vision (IJCV), 2026
+
+<p align="center">
+  <a href="https://www.tajamulashraf.com/"><b>Tajamul Ashraf</b></a><sup>1</sup> &nbsp;•&nbsp;
+  <b>Rajes Manna</b><sup>2</sup> &nbsp;•&nbsp;
+  <b>Partha Sarathi Purkayastha</b><sup>3</sup> &nbsp;•&nbsp;
+  <a href="https://tavaheed.netlify.app/"><b>Tavaheed Tariq</b></a><sup>1</sup> &nbsp;•&nbsp;
+  <a href="https://www.janibbashir.com/"><b>Janibul Bashir</b></a><sup>1</sup>
+</p>
+
+<p align="center">
+<sup>1</sup> GAASH Lab &nbsp;&nbsp;
+<sup>2</sup> Research Collaborator &nbsp;&nbsp;
+<sup>3</sup> Academic Researcher
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2504.15404">
+    <img src="https://img.shields.io/badge/ArXiv-2504.15404-b31b1b?style=for-the-badge&logo=arxiv">
+  </a>
+  <a href="https://gaash-lab.github.io/GT-website/">
+    <img src="https://img.shields.io/badge/Project_Page-Website-6f42c1?style=for-the-badge">
+  </a>
+  <a href="https://huggingface.co/papers/2504.15404">
+    <img src="https://img.shields.io/badge/HuggingFace-Demo-ffcc00?style=for-the-badge&logo=huggingface">
+  </a>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+</p>
+
+---
+
+## ✨ Highlights
+
+🔥 Accepted to the **International Journal of Computer Vision (IJCV 2026)**  
+🚀 Achieves **50.8 box mAP** on **Cityscapes → Foggy Cityscapes**  
+🎯 State-of-the-art performance for **Source-Free Object Detection (SFOD)**  
+🧠 Introduces a **Context Aware Grounded Teacher** for robust pseudo-labeling
+
+---
 
 
 
