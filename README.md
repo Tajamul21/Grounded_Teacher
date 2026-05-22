@@ -1,37 +1,3 @@
-<!-- full-width, left-aligned -->
-<div align="left">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif"
-       width="100%" />
-</div>
-
-
-<div align="center">
-
-# [Context Aware Grounded Teacher for Source Free Object Detection](https://arxiv.org/abs/2504.15404)
-[![Website](https://img.shields.io/badge/website-grounded_teacher-purple)](https://gaash-lab.github.io/GT-website/)
-[![Demo](https://img.shields.io/badge/demo-hugginface-blue)](https://huggingface.co/papers/2504.15404)
-[![Arxiv](https://img.shields.io/badge/Arxiv-paper-red?style=plastic&logo=arxiv)](https://arxiv.org/abs/2504.15404)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
-
-
-
-</div>
-
-This is the official Pytorch implementation of Grounded Teacher:
-
-["**Grounded Teacher**"](https://arxiv.org/abs/2504.15404) by [Tajamul Ashraf](https://www.tajamulashraf.com/), [Rajes Manna](), [Partha Sarathi Purkayastha](), [Tavaheed Tariq](https://tavaheed.netlify.app/) and [Janibul Bashir](https://www.janibbashir.com/).
-
----
-
-## NEWS
-- **[18/05/2026]** :collision: Our paper has been accepted to IJCV 🎉
-- **[04/26/2025]** :collision: We achieved new SoTA with 50.8 box mAP on [Cityscapes to Foggy Cityscapes](https://paperswithcode.com/sota/source-free-object-detection-on-cityscapes-to?p=context-aware-grounded-teacher-for-source)!
-- **[04/21/2025]** We released an arxiv version.. See more details in our [updated arxiv](https://arxiv.org/abs/2504.15404)! 
-
----
-
-
-redesign it also write authors and full name of ijcv 
 <!-- HERO BANNER -->
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
@@ -82,10 +48,6 @@ redesign it also write authors and full name of ijcv
 🧠 Introduces a **Context Aware Grounded Teacher** for robust pseudo-labeling
 
 ---
-
-
-
-
 ## 🎯 What is Grounded_Teacher?
 
 **Grounded Teacher (GT)** is a standard framework in Source Free Object Detection (SFOD) designed to tackle context bias and performance drop of the student model. It models contextual relationships using a dedicated relational context module and leverages this to mitigate inherent biases. GT applies augmentations to closely related classes across and within domains, enhancing underrepresented class performance while minimizing effects on dominant classes. An expert foundational branch supervises the student model, improving prediction quality under the SFOD setting.
