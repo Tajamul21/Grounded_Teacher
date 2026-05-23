@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 figures/
 dev/
 
@@ -79,3 +80,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows
+=======
+output
+__pycache__
+download
+>>>>>>> 27c379d99d7816f5cf365e3172b329abe10e89f6
