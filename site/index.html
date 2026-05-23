@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounded Teacher — IJCV 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container hero-content fade-in-up">
+            <span class="hero-tag">🧠&nbsp;&nbsp;IJCV 2026 · Accepted</span>
+
+            <h2>Context Aware Grounded Teacher<br>for Source-Free Object Detection</h2>
+
+            <p style="font-size: 1rem; margin-top: 1rem; color: var(--text-secondary);">
+                A bias-aware SFOD framework that grounds the teacher through relational context modeling, semantic augmentation, and expert foundational supervision — achieving new state-of-the-art on natural and medical imaging benchmarks.
+            </p>
+
+            <div class="authors-container">
+                <div class="authors-list">
+                    <div class="author-item"><a href="https://www.tajamulashraf.com/">Tajamul Ashraf</a><sup>1,2*</sup></div>
+                    <div class="author-item"><a href="https://linkedin.com/in/rajes-manna-489110212">Rajes Manna</a><sup>3†</sup></div>
+                    <div class="author-item"><a href="https://psindiap.github.io/">Partha Sarathi Purkayastha</a><sup>4†</sup></div>
+                    <div class="author-item"><a href="https://tavaheed.netlify.app/">Tavaheed Tariq</a><sup>3</sup></div>
+                    <div class="author-item"><a href="https://www.janibbashir.com/">Janibul Bashir</a><sup>3*</sup></div>
+                </div>
+                <div class="institutions">
+                    <span><strong>1</strong> Dept. of Computer Vision, MBZUAI, Abu Dhabi, UAE</span>
+                    <span><strong>2</strong> School of IT, IIT Delhi, New Delhi, India</span>
+                    <span><strong>3</strong> Dept. of IT, NIT Srinagar, J&amp;K, India</span>
+                    <span><strong>4</strong> Microsoft Research India, Bengaluru, India</span>
+                </div>
+                <div class="venue">* Corresponding author &nbsp;·&nbsp; † Equal contribution</div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="https://arxiv.org/abs/2504.15404" target="_blank" class="btn btn-primary">
+                    <i class="ai ai-arxiv"></i> arXiv Paper
+                </a>
+                <a href="https://arxiv.org/pdf/2504.15404" target="_blank" class="btn btn-secondary">
+                    <i class="fa-solid fa-file-pdf"></i> PDF
+                </a>
+                <a href="https://github.com/Tawheed-tariq/Grounded_Teacher" target="_blank" class="btn btn-secondary">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://gaash.nitsri.ac.in/" target="_blank" class="btn btn-secondary">
+                    <i class="fa-solid fa-globe"></i> Lab Page
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Abstract -->
+    <section class="section" id="abstract">
+        <div class="container fade-in-up">
+            <h2>Abstract</h2>
+            <p>
+                Source-free object detection (SFOD) faces persistent challenges due to class imbalance–driven context bias and instability in teacher–student training under noisy pseudo-labels. Existing techniques tend to ignore the context bias and class imbalance shift, especially in medical data.
+            </p>
+            <p>
+                To tackle this, we propose <strong>Grounded Teacher (GT)</strong>, a bias-aware source-free framework that grounds the teacher model through relational and semantic regularization. GT introduces a <strong>Relational Context Module (RCM)</strong>, which maintains an EMA estimate of cross-domain contextual bias, modeling directional inter-class confusions.
+            </p>
+            <p>
+                Building upon this, a <strong>Semantic Augmentation (SA)</strong> strategy selectively augments minority and confusable classes through adaptive MixUp in both source-similar and source-dissimilar target regions. A <strong>Semantic-Aware Loss (SAL)</strong> applies diagonally normalized weights, preventing gradient explosion while emphasizing minority–majority corrections.
+            </p>
+            <p>
+                Additionally, a frozen <strong>Expert branch</strong> derived from large vision foundation models (LVFMs) serves as a supervisory reference during training, refining pseudo-label quality without adding inference overhead. Evaluations on Cityscapes→Foggy (<strong>50.8 mAP</strong>) and medical transfers (<strong>+5.9 AP50</strong> on DDSM→INBreast) show consistent gains and improved minority-class detection, with less than 12% additional training cost.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Challenges -->
+    <section class="section narrative-section" style="background: var(--surface-color);" id="challenges">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Why SFOD Remains Hard</h2>
+                <p>Three compounding problems existing methods fail to address simultaneously</p>
+            </div>
+            <div class="challenges-grid">
+                <div class="challenge-card fade-in-up">
+                    <div class="challenge-icon">⚠️</div>
+                    <div>
+                        <h3>Mode Collapse via Pseudo-label Noise</h3>
+                        <p>Biased teacher models produce skewed pseudo-labels. As EMA propagates student weights back, error accumulates and the teacher collapses—predicting only dominant classes.</p>
+                    </div>
+                </div>
+                <div class="challenge-card fade-in-up">
+                    <div class="challenge-icon">🔀</div>
+                    <div>
+                        <h3>Severe Domain Shift</h3>
+                        <p>Source-free setting prohibits access to source data during adaptation. Models must transfer knowledge blindly, compounding context bias under large source-target gaps.</p>
+                    </div>
+                </div>
+                <div class="challenge-card fade-in-up">
+                    <div class="challenge-icon">⚖️</div>
+                    <div>
+                        <h3>Class Imbalance in Medical Data</h3>
+                        <p>Breast-cancer datasets like DDSM have severe imbalance; most images lack majority-class instances. Conventional image-level resampling is ineffective for detection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Method -->
+    <section class="section" id="method">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>How Grounded Teacher Works</h2>
+                <p>Three interlocking modules that break the bias-collapse cycle in source-free settings</p>
+            </div>
+
+            <div class="modules-grid">
+                <div class="module-card fade-in-up">
+                    <div class="module-num">MODULE 01</div>
+                    <h3>Relational Context Module (RCM)</h3>
+                    <p>Maintains an EMA-updated global confusion matrix across training. Models directional inter-class confusions so downstream augmentation and loss focus on genuinely problematic pairs.</p>
+                </div>
+                <div class="module-card fade-in-up">
+                    <div class="module-num">MODULE 02</div>
+                    <h3>Semantic Augmentation (SA) + Semantic-Aware Loss (SAL)</h3>
+                    <p>RCM-guided relation-MixUp blends minority instances with their most-confused majority neighbours from a FIFO Cropbank. SAL applies diagonal-normalized, bounded weights to classification loss—preventing gradient explosion while amplifying minority corrections.</p>
+                </div>
+                <div class="module-card fade-in-up">
+                    <div class="module-num">MODULE 03</div>
+                    <h3>Expert Foundational Branch</h3>
+                    <p>A frozen Large Vision Foundation Model (LVFM — BioMedParse for medical, GroundingDINO for natural) supervises the student via pseudo-label regression + SAL. Training-only: zero inference overhead.</p>
+                </div>
+            </div>
+
+            <div class="method-tags fade-in-up">
+                <span class="method-tag"><strong>EMA update</strong> Teacher ← Student weights</span>
+                <span class="method-tag"><strong>Pseudo-label feedback</strong> Filtered by τ = 0.8 confidence</span>
+                <span class="method-tag"><strong>Expert supervision</strong> Training-only · no inference cost</span>
+                <span class="method-tag"><strong>Domain split</strong> Variance-based source-similar / dissimilar</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Architecture -->
+    <section class="section narrative-section" style="background: var(--surface-color);" id="architecture">
+        <div class="container narrative-content fade-in-up">
+            <div class="narrative-text">
+                <h3>Framework Architecture</h3>
+                <p>
+                    The GT framework consists of a student–teacher pair connected by EMA weight updates. The <strong>Relational Context Module</strong> sits between them, maintaining a running confusion matrix that guides both the Cropbank sampling strategy and the Semantic-Aware Loss.
+                </p>
+                <p>
+                    A frozen <strong>Expert Branch</strong> (BioMedParse / GroundingDINO) provides an additional supervision signal to the student during training. At inference, only the student runs — the expert adds zero latency.
+                </p>
+                <p style="margin-bottom: 0;">
+                    The variance-based domain splitter partitions target images into source-similar and source-dissimilar subsets, allowing tailored augmentation strength in each region.
+                </p>
+            </div>
+            <div class="narrative-visual">
+                <!-- Replace with your architecture figure: static/img/GT_arch.png -->
+                <img src="static/img/architecture.png" alt="Grounded Teacher Architecture Diagram"
+                     onerror="this.parentElement.style.minHeight='240px'; this.parentElement.style.display='flex'; this.parentElement.style.alignItems='center'; this.parentElement.style.justifyContent='center'; this.outerHTML='<div style=\'text-align:center;color:var(--text-secondary);font-size:0.875rem;padding:2rem;\'><div style=\'font-size:2.5rem;margin-bottom:1rem;\'>📐</div><div>Place your architecture figure at</div><code style=\'color:var(--accent-primary);\'>static/img/GT_arch.png</code></div>';">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Results -->
+    <section class="section" id="results">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>State-of-the-Art Performance</h2>
+                <p>Evaluated on natural and medical domain adaptation benchmarks</p>
+            </div>
+
+            <!-- Cityscapes→Foggy -->
+            <div class="table-section fade-in-up">
+                <div class="table-title-row">
+                    <div class="table-title-bar"></div>
+                    <span>Table 4 — Cityscapes → Foggy Cityscapes</span>
+                </div>
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Method</th><th>SF</th><th>Venue</th>
+                                <th>Person</th><th>Rider</th><th>Car</th><th>Truck</th>
+                                <th>Bus</th><th>Train</th><th>M.cycle</th><th>Bicycle</th><th>mAP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Source Only</td><td class="sf-no">✗</td><td>—</td><td>22.4</td><td>26.6</td><td>28.5</td><td>9.0</td><td>16.0</td><td>4.3</td><td>15.2</td><td>25.3</td><td>18.4</td></tr>
+                            <tr><td>DA-Faster</td><td class="sf-no">✗</td><td>CVPR'18</td><td>29.2</td><td>40.4</td><td>43.4</td><td>19.7</td><td>38.3</td><td>28.5</td><td>23.7</td><td>32.7</td><td>32.0</td></tr>
+                            <tr><td>EPM</td><td class="sf-no">✗</td><td>ECCV'20</td><td>44.2</td><td>46.6</td><td>58.5</td><td>24.8</td><td>45.2</td><td>29.1</td><td>28.6</td><td>34.6</td><td>39.0</td></tr>
+                            <tr><td>AT</td><td class="sf-no">✗</td><td>CVPR'22</td><td>43.7</td><td>54.1</td><td>62.3</td><td>31.9</td><td>54.4</td><td>49.3</td><td>35.2</td><td>47.9</td><td>47.4</td></tr>
+                            <tr><td>MRT</td><td class="sf-no">✗</td><td>ICCV'23</td><td>52.8</td><td>51.7</td><td>68.7</td><td>35.9</td><td>58.1</td><td>54.5</td><td>41.0</td><td>47.1</td><td>51.2</td></tr>
+                            <tr><td>SFOD-Mosaic</td><td class="sf-yes">✓</td><td>AAAI'21</td><td>25.5</td><td>44.5</td><td>40.7</td><td>33.2</td><td>22.2</td><td>28.4</td><td>34.1</td><td>39.0</td><td>33.5</td></tr>
+                            <tr><td>HCL</td><td class="sf-yes">✓</td><td>NeurIPS'21</td><td>38.7</td><td>46.0</td><td>47.9</td><td>33.0</td><td>45.7</td><td>38.9</td><td>32.8</td><td>34.9</td><td>39.7</td></tr>
+                            <tr><td>LODS</td><td class="sf-yes">✓</td><td>CVPR'22</td><td>34.0</td><td>45.7</td><td>48.8</td><td>27.3</td><td>39.7</td><td>19.6</td><td>33.2</td><td>37.8</td><td>35.8</td></tr>
+                            <tr><td>IRG</td><td class="sf-yes">✓</td><td>CVPR'23</td><td>37.4</td><td>45.2</td><td>51.9</td><td>24.4</td><td>39.6</td><td>25.2</td><td>31.5</td><td>41.6</td><td>37.1</td></tr>
+                            <tr><td>PETS</td><td class="sf-yes">✓</td><td>ICCV'23</td><td>46.1</td><td>52.8</td><td>63.4</td><td>21.8</td><td>46.7</td><td>5.5</td><td>37.4</td><td>48.4</td><td>40.3</td></tr>
+                            <tr><td>SF-UT</td><td class="sf-yes">✓</td><td>ECCV'24</td><td>40.9</td><td>48.0</td><td>58.9</td><td>29.6</td><td>51.9</td><td>50.2</td><td>36.2</td><td>44.1</td><td>45.0</td></tr>
+                            <tr><td>LPLD</td><td class="sf-yes">✓</td><td>ECCV'24</td><td>39.7</td><td>49.1</td><td>56.6</td><td>29.6</td><td>46.3</td><td>26.4</td><td>36.1</td><td>43.6</td><td>40.9</td></tr>
+                            <tr class="row-ours">
+                                <td><span class="ours-badge">Ours</span>GT</td>
+                                <td class="sf-yes">✓</td><td>IJCV'26</td>
+                                <td>42.7</td><td>55.4</td><td>61.7</td><td>40.7</td><td>62.0</td><td>54.6</td><td>39.1</td><td>53.0</td>
+                                <td class="map-ours">50.8</td>
+                            </tr>
+                            <tr class="row-oracle">
+                                <td>Oracle</td><td class="sf-no">✗</td><td>—</td>
+                                <td>66.3</td><td>61.1</td><td>80.8</td><td>45.6</td><td>68.8</td><td>52.0</td><td>49.1</td><td>54.9</td><td>59.8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Medical -->
+            <div class="table-section fade-in-up">
+                <div class="table-title-row">
+                    <div class="table-title-bar"></div>
+                    <span>Medical Imaging Benchmarks (FROC Recall &amp; F1)</span>
+                </div>
+
+                <p class="table-caption">Table 1 — DDSM → INBreast (large-to-small, digitised film → full-field digital)</p>
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <thead><tr><th>Method</th><th>SF</th><th>Venue</th><th>R@0.05</th><th>R@0.30</th><th>R@0.50</th><th>R@1.00</th><th>AUC</th><th>F1</th></tr></thead>
+                        <tbody>
+                            <tr><td>IRG</td><td class="sf-yes">✓</td><td>CVPR'23</td><td>0.05</td><td>0.05</td><td>0.07</td><td>0.09</td><td>0.110</td><td>0.120</td></tr>
+                            <tr><td>LPLD</td><td class="sf-yes">✓</td><td>ECCV'24</td><td>0.09</td><td>0.15</td><td>0.35</td><td>0.35</td><td>0.548</td><td>0.635</td></tr>
+                            <tr><td>D-MASTER</td><td class="sf-no">✗</td><td>MICCAI'24</td><td>0.25</td><td>0.61</td><td>0.70</td><td>0.82</td><td>0.808</td><td>0.524</td></tr>
+                            <tr class="row-ours"><td><span class="ours-badge">Ours</span>GT</td><td class="sf-yes">✓</td><td>IJCV'26</td><td>0.06</td><td>0.45</td><td>0.65</td><td>0.92</td><td class="map-ours">0.589</td><td class="map-ours">0.758</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="table-caption">Table 2 — DDSM → RSNA-BSD1K (cross-geography, US acquisition)</p>
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <thead><tr><th>Method</th><th>SF</th><th>Venue</th><th>R@0.05</th><th>R@0.30</th><th>R@0.50</th><th>R@1.00</th><th>AUC</th><th>F1</th></tr></thead>
+                        <tbody>
+                            <tr><td>IRG</td><td class="sf-yes">✓</td><td>CVPR'23</td><td>0.16</td><td>0.25</td><td>0.37</td><td>0.39</td><td>0.308</td><td>0.235</td></tr>
+                            <tr><td>MRT</td><td class="sf-no">✗</td><td>ICCV'23</td><td>0.32</td><td>0.52</td><td>0.69</td><td>0.72</td><td>0.741</td><td>0.352</td></tr>
+                            <tr class="row-ours"><td><span class="ours-badge">Ours</span>GT</td><td class="sf-yes">✓</td><td>IJCV'26</td><td>0.10</td><td>0.43</td><td>0.58</td><td>0.91</td><td class="map-ours">0.781</td><td class="map-ours">0.530</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="table-caption">Table 3 — RSNA → INBreast (cross-machine acquisition)</p>
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <thead><tr><th>Method</th><th>SF</th><th>Venue</th><th>R@0.05</th><th>R@0.30</th><th>R@0.50</th><th>R@1.00</th><th>AUC</th><th>F1</th></tr></thead>
+                        <tbody>
+                            <tr><td>IRG</td><td class="sf-yes">✓</td><td>CVPR'23</td><td>0.05</td><td>0.05</td><td>0.07</td><td>0.09</td><td>0.110</td><td>0.120</td></tr>
+                            <tr><td>MRT</td><td class="sf-no">✗</td><td>ICCV'23</td><td>0.03</td><td>0.09</td><td>0.12</td><td>0.17</td><td>0.739</td><td>0.587</td></tr>
+                            <tr class="row-ours"><td><span class="ours-badge">Ours</span>GT</td><td class="sf-yes">✓</td><td>IJCV'26</td><td>0.01</td><td>0.28</td><td>0.49</td><td>0.90</td><td class="map-ours">0.638</td><td class="map-ours">0.605</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Ablation / Qualitative Slideshow -->
+    <section class="section narrative-section" style="background: var(--surface-color);" id="ablation">
+        <div class="container narrative-content fade-in-up">
+            <div class="narrative-text">
+                <h3>Qualitative Results</h3>
+                <p>
+                    Visual comparisons of GT against prior SFOD methods across natural and medical domain transfers.
+                    Detection boxes are colour-coded:
+                </p>
+                <ul style="list-style: none; margin-bottom: 1.5rem;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-square" style="color: #4ade80; margin-right: 10px;"></i><strong style="color: var(--text-primary);">Green</strong> — True Positive</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-square" style="color: #60a5fa; margin-right: 10px;"></i><strong style="color: var(--text-primary);">Blue</strong> — Misclassified</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-square" style="color: #f87171; margin-right: 10px;"></i><strong style="color: var(--text-primary);">Red</strong> — False Negative</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fa-solid fa-square" style="color: #f472b6; margin-right: 10px;"></i><strong style="color: var(--text-primary);">Pink</strong> — False Positive</li>
+                </ul>
+                <p>
+                    GT consistently recovers minority-class detections — trucks and buses in fog, and lesions in mammograms — that source-free baselines miss entirely.
+                </p>
+            </div>
+
+            <div class="narrative-visual">
+                <div class="carousel-container">
+                    <div class="carousel-slides-wrapper">
+
+                        <!-- Slide 1 — replace src with your image -->
+                        <div class="carousel-slide active" data-caption="Foggy Cityscapes — GT vs MRT / IRG / LPLD. GT recovers trucks and buses missed by baselines.">
+                            <img src="static/img/natural_qual.png" alt="Foggy Cityscapes qualitative results">
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide" data-caption="DDSM → INBreast — GT detects lesions missed by LPLD and IRG under large-to-small domain shift.">
+                            <img src="static/img/ddsm2inb.png" alt="DDSM to INBreast qualitative results">
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide" data-caption="DDSM → RSNA — GT maintains high recall under cross-geography acquisition shift.">
+                            <img src="static/img/ddsm2rsna.png" alt="DDSM to RSNA qualitative results">
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="carousel-slide" data-caption="RSNA → INBreast — GT shows robust cross-machine transfer with fewer false positives.">
+                            <img src="static/img/rsna2inb.png" alt="RSNA to INBreast qualitative results">
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="carousel-center-content">
+                            <div class="carousel-caption-text">Foggy Cityscapes — GT vs MRT / IRG / LPLD. GT recovers trucks and buses missed by baselines.</div>
+                            <div class="carousel-nav">
+                                <span class="carousel-dot active"></span>
+                                <span class="carousel-dot"></span>
+                                <span class="carousel-dot"></span>
+                                <span class="carousel-dot"></span>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Citation / Footer -->
+    <footer>
+        <div class="container" id="citation">
+            <div class="fade-in-up">
+                <h3 style="margin-bottom: 0.5rem;">Citation</h3>
+                <p style="margin-bottom: 0;">If you find this work useful, please cite:</p>
+            </div>
+
+            <div class="citation-block fade-in-up">
+                <button class="copy-btn" id="copyBtn" onclick="copyBib()">
+                    <i class="fa-regular fa-copy"></i> Copy BibTeX
+                </button>
+                <pre id="bib-text">@misc{ashraf2025contextawaregroundedteacher,
+      title={Context Aware Grounded Teacher for Source Free Object Detection}, 
+      author={Tajamul Ashraf and Rajes Manna and Partha Sarathi Purkayastha
+              and Tavaheed Tariq and Janibul Bashir},
+      year={2025},
+      eprint={2504.15404},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+}</pre>
+            </div>
+
+            <div class="footer-brand fade-in-up" style="margin-top: 1rem;">
+                Website template is inspired from <a href="https://vision-x-nyu.github.io/test-set-training/">test-set-training</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Scroll fade-in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+
+        // Copy BibTeX
+        function copyBib() {
+            const text = document.getElementById('bib-text').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = document.getElementById('copyBtn');
+                btn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy BibTeX';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+
+        // Carousel
+        document.querySelectorAll('.carousel-container').forEach(function(container) {
+            const slides = container.querySelectorAll('.carousel-slide');
+            const dots   = container.querySelectorAll('.carousel-dot');
+            const caption = container.querySelector('.carousel-caption-text');
+            let current = 0;
+
+            function show(idx) {
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = (idx + slides.length) % slides.length;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+                if (caption) caption.textContent = slides[current].dataset.caption || '';
+            }
+
+            container.querySelector('.prev-btn').addEventListener('click', function() { show(current - 1); });
+            container.querySelector('.next-btn').addEventListener('click', function() { show(current + 1); });
+            dots.forEach(function(dot, i) {
+                dot.addEventListener('click', function() { show(i); });
+            });
+        });
+    </script>
+
+</body>
+</html>
