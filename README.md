@@ -24,7 +24,7 @@
   <a href="https://arxiv.org/abs/2504.15404">
     <img src="https://img.shields.io/badge/ArXiv-2504.15404-b31b1b?style=for-the-badge&logo=arxiv">
   </a>
-  <a href="https://gaash-lab.github.io/GT-website/">
+  <a href="https://tajamul21.github.io/Grounded_Teacher/">
     <img src="https://img.shields.io/badge/Project_Page-Website-6f42c1?style=for-the-badge">
   </a>
   <a href="https://huggingface.co/papers/2504.15404">
