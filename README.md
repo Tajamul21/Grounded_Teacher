@@ -41,7 +41,7 @@
 
 ## ✨ Highlights
 
-🔥 Accepted to the **International Journal of Computer Vision (IJCV 2026)**  
+🔥 Accepted to the **International Journal of Computer Vision (IJCV)**  
 🚀 Achieves **50.8 box mAP** on **Cityscapes → Foggy Cityscapes**  
 🎯 State-of-the-art performance for **Source-Free Object Detection (SFOD)**  
 🧠 Introduces a **Context Aware Grounded Teacher** for robust pseudo-labeling
